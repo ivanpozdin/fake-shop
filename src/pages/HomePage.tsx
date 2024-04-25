@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useFetchProductsQuery } from "../store";
 import { useState } from "react";
 import Skeleton from "../components/Skeleton";
+import ActiveLink from "../components/ActiveLink";
 
 function HomePage() {
   const { data: featuredItems, isFetching, error } = useFetchProductsQuery(4);
@@ -32,9 +33,9 @@ function HomePage() {
         <ProductsList products={featuredItems} />
       </div>
       <div className="flex justify-center">
-        <Link to="/shop" className="mt-5 text-2xl">
+        <ActiveLink to="/shop" className="mt-5 text-2xl" activeClassName="">
           Shop now!
-        </Link>
+        </ActiveLink>
       </div>
     </div>
   );
