@@ -21,11 +21,11 @@ const sortingOptions = [
     value: (a: Product, b: Product) => b.price - a.price,
   },
   {
-    label: "Name a->z",
+    label: "Name a → z",
     value: (a: Product, b: Product) => a.title.localeCompare(b.title),
   },
   {
-    label: "Name z->a",
+    label: "Name z → a",
     value: (a: Product, b: Product) => -a.title.localeCompare(b.title),
   },
 ];

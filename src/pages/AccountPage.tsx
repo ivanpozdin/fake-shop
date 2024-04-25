@@ -11,7 +11,7 @@ function AccountPage() {
 
   return (
     <div className="flex flex-col items-center">
-      <h2 className="text-4xl  mb-10">Login</h2>
+      <h2 className="text-3xl font-semibold  mb-10">Login</h2>
       <form
         action=""
         onSubmit={(e) => e.preventDefault()}
