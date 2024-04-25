@@ -1,7 +1,6 @@
 import { VscAccount } from "react-icons/vsc";
 import { TiShoppingCart } from "react-icons/ti";
 import { MdFavorite } from "react-icons/md";
-import { Link } from "react-router-dom";
 import ActiveLink from "./ActiveLink";
 
 function Header() {
