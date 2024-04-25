@@ -1,5 +1,4 @@
 import ProductsList from "../components/ProductsList";
-import { Link } from "react-router-dom";
 import { useFetchProductsQuery } from "../store";
 import { useState } from "react";
 import Skeleton from "../components/Skeleton";
