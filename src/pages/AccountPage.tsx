@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Button from "../components/Button";
-import { Link } from "react-router-dom";
 import ActiveLink from "../components/ActiveLink";
 
 function AccountPage() {

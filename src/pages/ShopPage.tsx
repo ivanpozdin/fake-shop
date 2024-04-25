@@ -31,7 +31,7 @@ const sortingOptions = [
 ];
 
 function ShopPage() {
-  const { data: products, isFetching, error } = useFetchProductsQuery(20);
+  const { data: products } = useFetchProductsQuery(20);
 
   const [sortSelection, setSortSelection] =
     useState<DropdownOption<(a: Product, b: Product) => number>>(noSortOption);

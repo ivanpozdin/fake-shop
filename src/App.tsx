@@ -6,6 +6,7 @@ import ShopPage from "./pages/ShopPage";
 import CartPage from "./pages/CartPage";
 import FavoritesPage from "./pages/FavoritesPage";
 import ErrorPage from "./pages/ErrorPage";
+import favicon from "./imgs/favicon.svg";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,18 @@ const router = createBrowserRouter([
     ],
   },
 ]);
+
+function changeFavicon(newFaviconUrl: string) {
+  let existingLink: HTMLLinkElement | null =
+    document.querySelector("link[rel~='icon']");
+  if (!existingLink) {
+    existingLink = document.createElement("link");
+    document.head.appendChild(existingLink);
+  }
+  existingLink.href = newFaviconUrl;
+}
+
+changeFavicon(favicon);
 
 function App() {
   return <RouterProvider router={router} />;

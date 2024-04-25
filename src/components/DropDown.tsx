@@ -15,7 +15,7 @@ export default function DropDown<K>({
   onChange,
 }: DropdownProps<K>) {
   const [isOpen, setIsOpen] = useState(false);
-  const divElement = useRef<HTMLDivElement | undefined>();
+  const divElement = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handler = (event: MouseEvent) => {
